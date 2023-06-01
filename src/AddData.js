@@ -82,7 +82,10 @@ function ApiData1() {
 
     {getFormData.map((data1) => (
       <div className="card">
-      <ProsClass firstName={data1.userName} age={data1.age}/>
+      <ProsClass firstName={data1.userName} age={data1.age}>
+      hhdashdh
+      </ProsClass>
+
 
       </div>
       

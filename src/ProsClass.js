@@ -19,6 +19,8 @@ function Panel({ title, children }) {
   );
 }
 
+
+
 export default function ProsClass(props) {
   return (
     <div>
@@ -37,3 +39,6 @@ export default function ProsClass(props) {
     </div>
   )
 }
+
+
+

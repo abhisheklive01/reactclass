@@ -3,6 +3,7 @@ import axios from "axios";
 import "./styles.css";
 import { Link } from "react-router-dom";
 import ProsClass from "./ProsClass";
+import ResetState from "./ResetState";
 
 function ApiData1() {
   var formData = {
@@ -79,13 +80,13 @@ function ApiData1() {
 
   return (
     <div>
-
-    {getFormData.map((data1) => (
+<ResetState/>
+    {/* {getFormData.map((data1) => (
       <div className="card">
       <ProsClass data={data1}/>
       </div>
       
-           ))}
+           ))} */}
     
       {/* <h3>API Data POST 3 : </h3>
       <form onSubmit={submitData}>

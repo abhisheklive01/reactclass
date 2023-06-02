@@ -12,7 +12,7 @@ function Panel({ title, children }) {
       )}
 
       <button onClick={() => setIsActive(!isActive)}>
-      {isActive ? "Hide" : "Show" }
+      {isActive ? "Less" : "More" }
           
         </button>
     </section>
@@ -22,13 +22,18 @@ function Panel({ title, children }) {
 export default function ProsClass(props) {
   return (
     <div>
+
+
+    <p>First Name : {props.data.userName}</p>
+       
     <Panel>
-  <p>  Hello </p>
+  <p>  {props.data.age}</p>
+  <p>  {props.data.class}</p>
+  <p>  {props.data.address}</p>
+  <p>  {props.data.RollNo}</p>
+  <p>  {props.data.PhonNumber}</p>
     </Panel>
 
-    <p>First Name : {props.firstName}</p>
-   <p>Age : {props.age}</p>
-    
     </div>
   )
 }
